@@ -151,6 +151,7 @@ This repo provide two ways of installation: **standalone mode** and **package mo
   # Load the pre-trained model from Huggingface
   # When color or normal is absent, please apply default zeros to the missing modality
   # ckpt is cached in ~/.cache/utonia/ckpt, and the path can be customized by setting 'download_root'
+  # I change the path to ./weights/official
   model = utonia.model.load("utonia", repo_id="Pointcept/Utonia").cuda()
 
   # or
