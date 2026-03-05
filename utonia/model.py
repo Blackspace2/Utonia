@@ -862,7 +862,7 @@ def load(
             filename=f"{name}.pth",
             repo_type="model",
             revision="main",
-            local_dir=download_root or os.path.expanduser("~/.cache/utonia/ckpt"),
+            local_dir=download_root or os.path.expanduser("./weights/official"),
         )
     elif os.path.isfile(name):
         print(f"Loading checkpoint in local path: {name} ...")

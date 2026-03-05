@@ -42,7 +42,7 @@ def load(
             filename=f"{name}.npz",
             repo_type="dataset",
             revision="main",
-            local_dir=download_root or os.path.expanduser("~/.cache/utonia/data"),
+            local_dir=download_root or os.path.expanduser("./data/demo"),
         )
     elif os.path.isfile(name):
         print(f"Loading data in local path: {name} ...")
